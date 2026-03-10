@@ -19,7 +19,7 @@
         <div class="system-id">SYSTEM_ACCESS // v2.0.77</div>
         <h1 class="cyber-glitch" data-text="NEURAL_LINK">NEURAL_LINK</h1>
         <p class="subtitle">
-          <span class="blink">[</span> 身份验证协议 <span class="blink">]</span>
+          <span class="blink">[</span> 【身份验证协议】 <span class="blink">]</span>
         </p>
       </div>
 
