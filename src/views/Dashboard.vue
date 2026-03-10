@@ -792,20 +792,98 @@ export default {
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .welcome-section {
+    padding: 24px;
+  }
+  
+  .welcome-title {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 768px) {
-  .stats-grid {
-    grid-template-columns: 1fr;
+  .cyber-dashboard {
+    padding: 16px;
   }
   
-  .dashboard-grid {
-    grid-template-columns: 1fr;
+  .welcome-section {
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .welcome-title {
+    font-size: 20px;
+  }
+  
+  .welcome-subtitle {
+    font-size: 12px;
   }
   
   .welcome-stats {
     flex-direction: column;
     gap: 16px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .cyber-panel {
+    padding: 20px;
+  }
+  
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .activity-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .activity-time {
+    min-width: auto;
+  }
+  
+  .activity-content {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-title {
+    font-size: 18px;
+  }
+  
+  .stat-value-large {
+    font-size: 24px;
+  }
+  
+  .cyber-stat-card {
+    padding: 20px;
+  }
+  
+  .cyber-action-btn {
+    padding: 16px;
+  }
+  
+  .status-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .status-percent {
+    align-self: flex-end;
   }
 }
 </style>

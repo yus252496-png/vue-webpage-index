@@ -1,5 +1,14 @@
 <template>
-  <div class="main-layout" :class="{ 'fullscreen-mode': isFullscreen }">
+  <div class="main-layout" :class="{ 'fullscreen-mode': isFullscreen, 'mobile-menu-open': isMobileMenuOpen }">
+    <!-- 移动端菜单按钮 -->
+    <div class="mobile-menu-btn" @click="toggleMobileMenu" v-if="!isFullscreen">
+      <div class="menu-icon" :class="{ 'open': isMobileMenuOpen }">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    
     <!-- 左侧导航 -->
     <aside class="cyber-sidebar" v-if="!isFullscreen">
       <!-- 扫描线效果 -->
@@ -156,9 +165,14 @@ export default {
   },
   setup() {
     const isFullscreen = ref(false)
+    const isMobileMenuOpen = ref(false)
     
     const toggleFullscreen = () => {
       isFullscreen.value = !isFullscreen.value
+    }
+    
+    const toggleMobileMenu = () => {
+      isMobileMenuOpen.value = !isMobileMenuOpen.value
     }
     
     const handleKeydown = (e) => {
@@ -180,7 +194,9 @@ export default {
     
     return {
       isFullscreen,
-      toggleFullscreen
+      toggleFullscreen,
+      isMobileMenuOpen,
+      toggleMobileMenu
     }
   },
   data() {
@@ -874,5 +890,136 @@ export default {
 
 .fullscreen-mode .content-footer {
   display: none;
+}
+
+/* 移动端菜单按钮 */
+.mobile-menu-btn {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #00f3ff;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.menu-icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 10px;
+}
+
+.menu-icon span:nth-child(3) {
+  top: 20px;
+}
+
+.menu-icon.open span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.menu-icon.open span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+  
+  .cyber-sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    height: 100vh;
+    z-index: 999;
+    transition: left 0.3s ease;
+  }
+  
+  .mobile-menu-open .cyber-sidebar {
+    left: 0;
+  }
+  
+  .cyber-content {
+    width: 100%;
+  }
+  
+  .cyber-header {
+    padding: 16px 20px;
+  }
+  
+  .header-right {
+    gap: 16px;
+  }
+  
+  .content-body {
+    padding: 16px 20px;
+  }
+  
+  .cyber-user-dropdown {
+    padding: 4px 12px 4px 4px;
+  }
+  
+  .user-info {
+    display: none;
+  }
+  
+  .breadcrumb {
+    font-size: 10px;
+  }
+  
+  .content-footer {
+    padding: 12px 20px;
+  }
+  
+  .footer-data {
+    gap: 12px;
+  }
+  
+  .footer-data span {
+    font-size: 8px;
+  }
+}
+
+/* 平板适配 */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cyber-sidebar {
+    width: 240px;
+  }
+  
+  .content-body {
+    padding: 20px 24px;
+  }
+  
+  .cyber-header {
+    padding: 16px 24px;
+  }
 }
 </style>

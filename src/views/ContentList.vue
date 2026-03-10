@@ -807,22 +807,146 @@ export default {
   .filter-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .cyber-content-list {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 768px) {
+  .cyber-content-list {
+    padding: 16px;
+  }
+  
+  .cyber-filter-section,
+  .cyber-data-section {
+    padding: 20px;
+  }
+  
   .filter-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .filter-actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .cyber-btn {
+    width: 100%;
+    justify-content: center;
   }
   
   .section-toolbar {
     flex-direction: column;
     gap: 16px;
+    align-items: stretch;
+  }
+  
+  .toolbar-right {
+    justify-content: center;
+  }
+  
+  .cyber-table-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .cyber-table {
+    min-width: 600px;
   }
   
   .cyber-table th,
   .cyber-table td {
     padding: 12px 8px;
     font-size: 12px;
+  }
+  
+  .cyber-pagination {
+    gap: 16px;
+  }
+  
+  .page-btn {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .page-info {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cyber-content-list {
+    padding: 12px;
+  }
+  
+  .cyber-filter-section,
+  .cyber-data-section {
+    padding: 16px;
+  }
+  
+  .header-text {
+    font-size: 12px;
+  }
+  
+  .cyber-select,
+  .cyber-search-input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+  
+  .cyber-btn {
+    padding: 8px 16px;
+    font-size: 11px;
+  }
+  
+  .data-count {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .count-label {
+    font-size: 10px;
+  }
+  
+  .count-value {
+    font-size: 14px;
+  }
+  
+  .cyber-table th,
+  .cyber-table td {
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+  
+  .cyber-action-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .type-tag,
+  .cyber-status-badge {
+    padding: 2px 8px;
+    font-size: 10px;
+  }
+  
+  .cyber-empty-state {
+    padding: 40px 16px;
+  }
+  
+  .empty-icon {
+    font-size: 36px;
+  }
+  
+  .cyber-empty-state p {
+    font-size: 13px;
+  }
+  
+  .empty-hint {
+    font-size: 9px;
   }
 }
 </style>
