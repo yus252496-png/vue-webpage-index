@@ -210,7 +210,8 @@ export default {
             { id: 'dashboard', name: '仪表盘', icon: '◉', route: '/dashboard' },
             { id: 'analytics', name: '数据分析', icon: '◆', route: '/analytics' },
             { id: 'stock-analysis', name: '股票分析', icon: '◊', route: '/stock-analysis' },
-            { id: 'ai-code-generator', name: 'AI 代码生成器', icon: '◈', route: '/ai-code-generator' }
+            { id: 'ai-code-generator', name: 'AI 代码生成器', icon: '◈', route: '/ai-code-generator' },
+            { id: 'personal-resume', name: '个人简历', icon: '◊', route: '/personal-resume' }
           ]
         },
         {

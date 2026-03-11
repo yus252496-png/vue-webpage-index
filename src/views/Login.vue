@@ -110,6 +110,8 @@
           <div class="cyber-line"></div>
           <p class="signup-text">
             未注册节点? <router-link to="/register" class="cyber-link">创建新身份</router-link>
+            <span class="divider">|</span>
+            <router-link to="/personal-resume" class="cyber-link">个人简历</router-link>
           </p>
           <div class="cyber-line"></div>
         </div>
@@ -709,6 +711,11 @@ label {
 
 .cyber-link:hover {
   text-shadow: 0 0 10px rgba(255, 234, 0, 0.8);
+}
+
+.divider {
+  color: rgba(0, 243, 255, 0.5);
+  margin: 0 10px;
 }
 
 /* 卡片底部 */

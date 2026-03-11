@@ -67,6 +67,11 @@ const routes = [
     name: 'AICodeGenerator',
     component: () => import('../views/AICodeGenerator.vue'),
     meta: { requiresAuth: true }
+  },
+  {
+    path: '/personal-resume',
+    name: 'PersonalResume',
+    component: () => import('../views/PersonalResume.vue')
   }
 ]
 
