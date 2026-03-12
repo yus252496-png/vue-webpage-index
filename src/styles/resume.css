@@ -368,14 +368,14 @@
 }
 
 .skill-tag.ai {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(139, 92, 246, 0.3));
-  color: #d8b4fe;
-  border: 1px solid rgba(139, 92, 246, 0.5);
+  background: linear-gradient(135deg, rgba(255, 0, 255, 0.2), rgba(255, 0, 255, 0.3));
+  color: #ff99ff;
+  border: 1px solid rgba(255, 0, 255, 0.5);
 }
 
 .skill-tag.ai:hover {
-  background: linear-gradient(135deg, rgba(139, 92, 246, 0.3), rgba(139, 92, 246, 0.4));
-  box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  background: linear-gradient(135deg, rgba(255, 0, 255, 0.3), rgba(255, 0, 255, 0.4));
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
 /* Experience Section */
@@ -470,16 +470,17 @@
 }
 
 .achievement {
-  background: rgba(139, 92, 246, 0.1);
-  border-left: 3px solid #8b5cf6;
+  background: rgba(255, 0, 255, 0.1);
+  border-left: 3px solid #ff00ff;
   padding: 12px 15px;
   border-radius: 0 8px 8px 0;
   margin-top: 10px;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .achievement strong {
-  color: #d8b4fe;
-  text-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  color: #ff99ff;
+  text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
 }
 
 /* Projects Section */
