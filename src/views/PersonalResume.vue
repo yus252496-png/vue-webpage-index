@@ -1,11 +1,40 @@
 <template>
-  <div class="personal-resume">
+  <div class="personal-resume" :class="currentStyle">
+    <!-- 风格切换按钮 -->
+    <div class="style-switcher" v-if="!isStyleMenuOpen">
+      <button class="style-btn" @click="toggleStyleMenu">
+        <span class="btn-icon">🎨</span>
+        <span class="btn-text">风格</span>
+      </button>
+    </div>
+    
+    <!-- 风格选择菜单 -->
+    <div class="style-menu" v-if="isStyleMenuOpen">
+      <div class="menu-header">
+        <h3>选择风格</h3>
+        <button class="close-btn" @click="toggleStyleMenu">×</button>
+      </div>
+      <div class="menu-content">
+        <div 
+          v-for="style in availableStyles" 
+          :key="style.id"
+          class="style-option"
+          :class="{ active: currentStyle === style.id }"
+          @click="changeStyle(style.id)"
+        >
+          <div class="style-preview" :class="style.id"></div>
+          <span class="style-name">{{ style.name }}</span>
+        </div>
+      </div>
+    </div>
     <!-- Header -->
     <header class="resume-header">
       <div class="header-content">
         <div class="name-section">
           <h1>余宏果</h1>
           <div class="title-badge">高级前端开发工程师 | 技术管理 | AI应用专家</div>
+        </div>
+        <div class="contact-meta">
           <div class="meta-info">
             <div class="meta-item">
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
@@ -20,16 +49,16 @@
               本科
             </div>
           </div>
-        </div>
-        <div class="contact-info">
-          <div class="contact-grid">
-            <div class="contact-item">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-              17688939632
-            </div>
-            <div class="contact-item">
-              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-              17688939632@163.com
+          <div class="contact-info">
+            <div class="contact-grid">
+              <div class="contact-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                17688939632
+              </div>
+              <div class="contact-item">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                17688939632@163.com
+              </div>
             </div>
           </div>
         </div>
@@ -331,492 +360,52 @@
 
 <script>
 export default {
-  name: 'PersonalResume'
+  name: 'PersonalResume',
+  data() {
+    return {
+      isStyleMenuOpen: false,
+      currentStyle: 'cyberpunk',
+      availableStyles: [
+        {
+          id: 'cyberpunk',
+          name: '赛博朋克'
+        },
+        {
+          id: 'minimal',
+          name: '极简风格'
+        },
+        {
+          id: 'classic',
+          name: '经典风格'
+        },
+        {
+          id: 'modern',
+          name: '现代风格'
+        },
+        {
+          id: 'comic',
+          name: '漫画风格'
+        },
+        {
+          id: 'sketch',
+          name: '简笔风格'
+        }
+      ]
+    }
+  },
+  methods: {
+    toggleStyleMenu() {
+      this.isStyleMenuOpen = !this.isStyleMenuOpen
+    },
+    changeStyle(styleId) {
+      this.currentStyle = styleId
+      this.isStyleMenuOpen = false
+    }
+  }
 }
 </script>
 
 <style scoped>
-.personal-resume {
-  max-width: 1000px;
-  margin: 0 auto;
-  background: rgba(13, 13, 20, 0.8);
-  border: 1px solid rgba(0, 243, 255, 0.2);
-  box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-}
-
-/* Header Section */
-.resume-header {
-  background: linear-gradient(135deg, #0d0d14 0%, #12121a 100%);
-  color: #fff;
-  padding: 50px 60px;
-  position: relative;
-  overflow: hidden;
-  border-bottom: 1px solid rgba(0, 243, 255, 0.2);
-}
-
-.resume-header::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 400px;
-  height: 400px;
-  background: rgba(0, 243, 255, 0.05);
-  border-radius: 50%;
-  box-shadow: 0 0 100px rgba(0, 243, 255, 0.1);
-}
-
-.header-content {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-.name-section h1 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
-  color: #00f3ff;
-  text-shadow: 0 0 20px rgba(0, 243, 255, 0.5);
-}
-
-.title-badge {
-  display: inline-block;
-  background: rgba(0, 243, 255, 0.1);
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 243, 255, 0.3);
-  color: #00f3ff;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px 30px;
-  font-size: 14px;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  opacity: 0.95;
-  color: #a0a0b0;
-}
-
-.contact-item svg {
-  width: 16px;
-  height: 16px;
-  opacity: 0.8;
-  color: #00f3ff;
-}
-
-.meta-info {
-  display: flex;
-  gap: 30px;
-  margin-top: 20px;
-  font-size: 14px;
-  opacity: 0.9;
-  color: #a0a0b0;
-}
-
-.meta-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.meta-item svg {
-  width: 14px;
-  height: 14px;
-  color: #00f3ff;
-}
-
-/* Main Content */
-.resume-content {
-  padding: 50px 60px;
-  background: rgba(10, 10, 15, 0.9);
-}
-
-.resume-section {
-  margin-bottom: 40px;
-  animation: fadeIn 0.6s ease-out forwards;
-}
-
-.resume-section:nth-child(2) { animation-delay: 0.1s; }
-.resume-section:nth-child(3) { animation-delay: 0.2s; }
-.resume-section:nth-child(4) { animation-delay: 0.3s; }
-.resume-section:nth-child(5) { animation-delay: 0.4s; }
-
-.section-title {
-  font-size: 22px;
-  font-weight: 700;
-  color: #00f3ff;
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 3px solid #ff00ff;
-  display: inline-block;
-  position: relative;
-  text-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
-}
-
-.section-title::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 50%;
-  height: 3px;
-  background: #00f3ff;
-  box-shadow: 0 0 10px rgba(0, 243, 255, 0.5);
-}
-
-/* Summary */
-.summary {
-  background: rgba(0, 243, 255, 0.05);
-  padding: 25px 30px;
-  border-radius: 12px;
-  border-left: 4px solid #ff00ff;
-  font-size: 15px;
-  line-height: 1.8;
-  color: #a0a0b0;
-  border: 1px solid rgba(0, 243, 255, 0.1);
-}
-
-.highlight {
-  color: #00f3ff;
-  font-weight: 600;
-  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
-}
-
-/* Skills */
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
-}
-
-.skill-category {
-  background: rgba(0, 243, 255, 0.05);
-  padding: 20px;
-  border-radius: 10px;
-  border-top: 3px solid #00f3ff;
-  border: 1px solid rgba(0, 243, 255, 0.1);
-}
-
-.skill-category h3 {
-  font-size: 16px;
-  color: #00f3ff;
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
-}
-
-.skill-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.skill-tag {
-  background: rgba(13, 13, 20, 0.8);
-  color: #a0a0b0;
-  padding: 5px 12px;
-  border-radius: 15px;
-  font-size: 13px;
-  border: 1px solid rgba(0, 243, 255, 0.2);
-  transition: all 0.3s;
-}
-
-.skill-tag:hover {
-  background: rgba(0, 243, 255, 0.1);
-  color: #00f3ff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 243, 255, 0.2);
-  border-color: #00f3ff;
-}
-
-.skill-tag.expert {
-  background: rgba(0, 243, 255, 0.1);
-  color: #00f3ff;
-  font-weight: 500;
-  border-color: #00f3ff;
-  box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
-}
-
-.skill-tag.ai {
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.2));
-  color: #00ff88;
-  font-weight: 500;
-  border: 1px solid rgba(0, 255, 136, 0.3);
-  box-shadow: 0 0 10px rgba(0, 255, 136, 0.2);
-}
-
-/* Experience */
-.timeline {
-  position: relative;
-  padding-left: 30px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, #00f3ff, #ff00ff);
-  box-shadow: 0 0 10px rgba(0, 243, 255, 0.3);
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 35px;
-  padding-left: 25px;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -36px;
-  top: 5px;
-  width: 12px;
-  height: 12px;
-  background: #0a0a0f;
-  border: 3px solid #ff00ff;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
-}
-
-.timeline-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 10px;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.company-info h3 {
-  font-size: 18px;
-  color: #00f3ff;
-  margin-bottom: 4px;
-  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
-}
-
-.company-info .position {
-  color: #ff00ff;
-  font-weight: 600;
-  font-size: 15px;
-  text-shadow: 0 0 5px rgba(255, 0, 255, 0.3);
-}
-
-.duration {
-  background: rgba(0, 243, 255, 0.05);
-  padding: 4px 12px;
-  border-radius: 12px;
-  font-size: 13px;
-  color: #a0a0b0;
-  font-weight: 500;
-  border: 1px solid rgba(0, 243, 255, 0.2);
-}
-
-.company-desc {
-  font-size: 13px;
-  color: #606070;
-  margin-bottom: 12px;
-  font-style: italic;
-}
-
-.responsibilities {
-  list-style: none;
-}
-
-.responsibilities li {
-  position: relative;
-  padding-left: 18px;
-  margin-bottom: 8px;
-  font-size: 14px;
-  line-height: 1.6;
-  color: #a0a0b0;
-}
-
-.responsibilities li::before {
-  content: '▸';
-  position: absolute;
-  left: 0;
-  color: #ff00ff;
-  font-weight: bold;
-  text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
-}
-
-.achievement {
-  background: rgba(255, 0, 255, 0.05);
-  border-left: 3px solid #ff00ff;
-  padding: 10px 15px;
-  margin-top: 10px;
-  border-radius: 0 8px 8px 0;
-  font-size: 13px;
-  color: #a0a0b0;
-  border: 1px solid rgba(255, 0, 255, 0.1);
-}
-
-.achievement strong {
-  color: #ff00ff;
-  text-shadow: 0 0 5px rgba(255, 0, 255, 0.5);
-}
-
-/* Projects */
-.project-card {
-  background: rgba(0, 243, 255, 0.05);
-  border-radius: 12px;
-  padding: 25px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(0, 243, 255, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.project-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 243, 255, 0.1);
-  border-color: rgba(0, 243, 255, 0.3);
-}
-
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.project-name {
-  font-size: 18px;
-  font-weight: 700;
-  color: #00f3ff;
-  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
-}
-
-.tech-stack {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.tech-item {
-  background: rgba(13, 13, 20, 0.8);
-  color: #00f3ff;
-  padding: 3px 10px;
-  border-radius: 4px;
-  font-size: 12px;
-  font-weight: 500;
-  border: 1px solid rgba(0, 243, 255, 0.2);
-}
-
-.tech-item.ai {
-  background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 255, 136, 0.2));
-  color: #00ff88;
-  border: 1px solid rgba(0, 255, 136, 0.3);
-}
-
-.project-desc {
-  font-size: 14px;
-  color: #a0a0b0;
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.project-role {
-  font-size: 14px;
-  color: #606070;
-}
-
-.project-role strong {
-  color: #00f3ff;
-  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
-}
-
-/* Education & Certs */
-.edu-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-  border-bottom: 1px solid rgba(0, 243, 255, 0.1);
-}
-
-.edu-item:last-child {
-  border-bottom: none;
-}
-
-.edu-main h4 {
-  font-size: 16px;
-  color: #00f3ff;
-  margin-bottom: 4px;
-  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
-}
-
-.edu-main p {
-  font-size: 14px;
-  color: #606070;
-}
-
-.cert-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: linear-gradient(135deg, rgba(0, 243, 255, 0.1), rgba(0, 243, 255, 0.2));
-  color: #00f3ff;
-  padding: 6px 16px;
-  border-radius: 20px;
-  font-size: 13px;
-  font-weight: 500;
-  border: 1px solid rgba(0, 243, 255, 0.3);
-  box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
-}
-
-.cert-badge svg {
-  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .resume-header, .resume-content {
-    padding: 30px;
-  }
-  .header-content {
-    flex-direction: column;
-  }
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-  .timeline-header {
-    flex-direction: column;
-  }
-  .skills-container {
-    grid-template-columns: 1fr;
-  }
-  .name-section h1 {
-    font-size: 32px;
-  }
-}
+@import '../styles/resume.css';
+@import '../styles/resume-styles.css';
 </style>

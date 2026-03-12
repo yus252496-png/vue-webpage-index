@@ -1,0 +1,1325 @@
+/* 赛博朋克风格（默认） */
+.personal-resume.cyberpunk {
+  background: rgba(13, 13, 20, 0.8);
+  border: 1px solid rgba(0, 243, 255, 0.2);
+  box-shadow: 0 0 30px rgba(0, 243, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+/* 极简风格 */
+.personal-resume.minimal {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-resume.minimal .resume-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  color: #212529;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.personal-resume.minimal .name-section h1 {
+  color: #212529;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .title-badge {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  border: 1px solid rgba(0, 123, 255, 0.3);
+}
+
+.personal-resume.minimal .contact-item {
+  color: #495057;
+}
+
+.personal-resume.minimal .contact-item svg {
+  color: #007bff;
+}
+
+.personal-resume.minimal .meta-item {
+  color: #6c757d;
+}
+
+.personal-resume.minimal .meta-item svg {
+  color: #007bff;
+}
+
+.personal-resume.minimal .resume-content {
+  background: #ffffff;
+}
+
+.personal-resume.minimal .section-title {
+  color: #007bff;
+  border-bottom: 3px solid #6c757d;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .section-title::after {
+  background: #007bff;
+  box-shadow: none;
+}
+
+.personal-resume.minimal .summary {
+  background: #f8f9fa;
+  border-left: 4px solid #007bff;
+  color: #495057;
+  border: 1px solid #e9ecef;
+}
+
+.personal-resume.minimal .highlight {
+  color: #007bff;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .skill-category {
+  background: #f8f9fa;
+  border-top: 3px solid #007bff;
+  border: 1px solid #e9ecef;
+}
+
+.personal-resume.minimal .skill-category h3 {
+  color: #007bff;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .skill-tag {
+  background: #ffffff;
+  color: #495057;
+  border: 1px solid #dee2e6;
+}
+
+.personal-resume.minimal .skill-tag:hover {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  border-color: #007bff;
+  box-shadow: none;
+}
+
+.personal-resume.minimal .skill-tag.expert {
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  border-color: #007bff;
+  box-shadow: none;
+}
+
+.personal-resume.minimal .skill-tag.ai {
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.2));
+  color: #28a745;
+  border: 1px solid rgba(40, 167, 69, 0.3);
+  box-shadow: none;
+}
+
+.personal-resume.minimal .timeline::before {
+  background: linear-gradient(to bottom, #007bff, #6c757d);
+  box-shadow: none;
+}
+
+.personal-resume.minimal .timeline-item::before {
+  background: #ffffff;
+  border: 3px solid #007bff;
+  box-shadow: none;
+}
+
+.personal-resume.minimal .company-info h3 {
+  color: #007bff;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .company-info .position {
+  color: #6c757d;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .duration {
+  background: #f8f9fa;
+  color: #6c757d;
+  border: 1px solid #dee2e6;
+}
+
+.personal-resume.minimal .company-desc {
+  color: #6c757d;
+}
+
+.personal-resume.minimal .responsibilities li {
+  color: #495057;
+}
+
+.personal-resume.minimal .responsibilities li::before {
+  color: #007bff;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .achievement {
+  background: rgba(0, 123, 255, 0.05);
+  border-left: 3px solid #007bff;
+  color: #495057;
+  border: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.personal-resume.minimal .achievement strong {
+  color: #007bff;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .project-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.personal-resume.minimal .project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #007bff;
+}
+
+.personal-resume.minimal .project-name {
+  color: #007bff;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .tech-item {
+  background: #ffffff;
+  color: #007bff;
+  border: 1px solid #dee2e6;
+}
+
+.personal-resume.minimal .tech-item.ai {
+  background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.2));
+  color: #28a745;
+  border: 1px solid rgba(40, 167, 69, 0.3);
+}
+
+.personal-resume.minimal .project-desc {
+  color: #495057;
+}
+
+.personal-resume.minimal .project-role {
+  color: #6c757d;
+}
+
+.personal-resume.minimal .project-role strong {
+  color: #007bff;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .edu-item {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.personal-resume.minimal .edu-main h4 {
+  color: #007bff;
+  text-shadow: none;
+}
+
+.personal-resume.minimal .edu-main p {
+  color: #6c757d;
+}
+
+.personal-resume.minimal .cert-badge {
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.1), rgba(0, 123, 255, 0.2));
+  color: #007bff;
+  border: 1px solid rgba(0, 123, 255, 0.3);
+  box-shadow: none;
+}
+
+.personal-resume.minimal .cert-badge svg {
+  text-shadow: none;
+}
+
+/* 经典风格 */
+.personal-resume.classic {
+  background: #f5f5dc;
+  border: 1px solid #d2b48c;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.personal-resume.classic .resume-header {
+  background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+  color: #ffffff;
+  border-bottom: 1px solid #d2b48c;
+}
+
+.personal-resume.classic .name-section h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.personal-resume.classic .title-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.personal-resume.classic .contact-item {
+  color: #f5f5dc;
+}
+
+.personal-resume.classic .contact-item svg {
+  color: #f5f5dc;
+}
+
+.personal-resume.classic .meta-item {
+  color: #f5f5dc;
+}
+
+.personal-resume.classic .meta-item svg {
+  color: #f5f5dc;
+}
+
+.personal-resume.classic .resume-content {
+  background: #fff8dc;
+}
+
+.personal-resume.classic .section-title {
+  color: #8b4513;
+  border-bottom: 3px solid #a0522d;
+  text-shadow: none;
+}
+
+.personal-resume.classic .section-title::after {
+  background: #8b4513;
+  box-shadow: none;
+}
+
+.personal-resume.classic .summary {
+  background: #f5f5dc;
+  border-left: 4px solid #8b4513;
+  color: #3e2723;
+  border: 1px solid #d2b48c;
+}
+
+.personal-resume.classic .highlight {
+  color: #8b4513;
+  text-shadow: none;
+}
+
+.personal-resume.classic .skill-category {
+  background: #f5f5dc;
+  border-top: 3px solid #8b4513;
+  border: 1px solid #d2b48c;
+}
+
+.personal-resume.classic .skill-category h3 {
+  color: #8b4513;
+  text-shadow: none;
+}
+
+.personal-resume.classic .skill-tag {
+  background: #fff8dc;
+  color: #3e2723;
+  border: 1px solid #d2b48c;
+}
+
+.personal-resume.classic .skill-tag:hover {
+  background: rgba(139, 69, 19, 0.1);
+  color: #8b4513;
+  border-color: #8b4513;
+  box-shadow: none;
+}
+
+.personal-resume.classic .skill-tag.expert {
+  background: rgba(139, 69, 19, 0.1);
+  color: #8b4513;
+  border-color: #8b4513;
+  box-shadow: none;
+}
+
+.personal-resume.classic .skill-tag.ai {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.2));
+  color: #2e7d32;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+  box-shadow: none;
+}
+
+.personal-resume.classic .timeline::before {
+  background: linear-gradient(to bottom, #8b4513, #a0522d);
+  box-shadow: none;
+}
+
+.personal-resume.classic .timeline-item::before {
+  background: #fff8dc;
+  border: 3px solid #8b4513;
+  box-shadow: none;
+}
+
+.personal-resume.classic .company-info h3 {
+  color: #8b4513;
+  text-shadow: none;
+}
+
+.personal-resume.classic .company-info .position {
+  color: #a0522d;
+  text-shadow: none;
+}
+
+.personal-resume.classic .duration {
+  background: #f5f5dc;
+  color: #6d4c41;
+  border: 1px solid #d2b48c;
+}
+
+.personal-resume.classic .company-desc {
+  color: #6d4c41;
+}
+
+.personal-resume.classic .responsibilities li {
+  color: #3e2723;
+}
+
+.personal-resume.classic .responsibilities li::before {
+  color: #8b4513;
+  text-shadow: none;
+}
+
+.personal-resume.classic .achievement {
+  background: rgba(139, 69, 19, 0.05);
+  border-left: 3px solid #8b4513;
+  color: #3e2723;
+  border: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.personal-resume.classic .achievement strong {
+  color: #8b4513;
+  text-shadow: none;
+}
+
+.personal-resume.classic .project-card {
+  background: #f5f5dc;
+  border: 1px solid #d2b48c;
+}
+
+.personal-resume.classic .project-card:hover {
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.1);
+  border-color: #8b4513;
+}
+
+.personal-resume.classic .project-name {
+  color: #8b4513;
+  text-shadow: none;
+}
+
+.personal-resume.classic .tech-item {
+  background: #fff8dc;
+  color: #8b4513;
+  border: 1px solid #d2b48c;
+}
+
+.personal-resume.classic .tech-item.ai {
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(76, 175, 80, 0.2));
+  color: #2e7d32;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.personal-resume.classic .project-desc {
+  color: #3e2723;
+}
+
+.personal-resume.classic .project-role {
+  color: #6d4c41;
+}
+
+.personal-resume.classic .project-role strong {
+  color: #8b4513;
+  text-shadow: none;
+}
+
+.personal-resume.classic .edu-item {
+  border-bottom: 1px solid #d2b48c;
+}
+
+.personal-resume.classic .edu-main h4 {
+  color: #8b4513;
+  text-shadow: none;
+}
+
+.personal-resume.classic .edu-main p {
+  color: #6d4c41;
+}
+
+.personal-resume.classic .cert-badge {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.1), rgba(139, 69, 19, 0.2));
+  color: #8b4513;
+  border: 1px solid rgba(139, 69, 19, 0.3);
+  box-shadow: none;
+}
+
+.personal-resume.classic .cert-badge svg {
+  text-shadow: none;
+}
+
+/* 现代风格 */
+.personal-resume.modern {
+  background: #ffffff;
+  border: 1px solid #e4e6eb;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+}
+
+.personal-resume.modern .resume-header {
+  background: linear-gradient(135deg, #1877f2 0%, #3b5998 100%);
+  color: #ffffff;
+  border-bottom: 1px solid #e4e6eb;
+}
+
+.personal-resume.modern .name-section h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.personal-resume.modern .title-badge {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.personal-resume.modern .contact-item {
+  color: #f0f2f5;
+}
+
+.personal-resume.modern .contact-item svg {
+  color: #f0f2f5;
+}
+
+.personal-resume.modern .meta-item {
+  color: #f0f2f5;
+}
+
+.personal-resume.modern .meta-item svg {
+  color: #f0f2f5;
+}
+
+.personal-resume.modern .resume-content {
+  background: #f0f2f5;
+}
+
+.personal-resume.modern .section-title {
+  color: #1877f2;
+  border-bottom: 3px solid #3b5998;
+  text-shadow: none;
+}
+
+.personal-resume.modern .section-title::after {
+  background: #1877f2;
+  box-shadow: none;
+}
+
+.personal-resume.modern .summary {
+  background: #ffffff;
+  border-left: 4px solid #1877f2;
+  color: #333333;
+  border: 1px solid #e4e6eb;
+}
+
+.personal-resume.modern .highlight {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+.personal-resume.modern .skill-category {
+  background: #ffffff;
+  border-top: 3px solid #1877f2;
+  border: 1px solid #e4e6eb;
+}
+
+.personal-resume.modern .skill-category h3 {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+.personal-resume.modern .skill-tag {
+  background: #f0f2f5;
+  color: #333333;
+  border: 1px solid #e4e6eb;
+}
+
+.personal-resume.modern .skill-tag:hover {
+  background: rgba(24, 119, 242, 0.1);
+  color: #1877f2;
+  border-color: #1877f2;
+  box-shadow: none;
+}
+
+.personal-resume.modern .skill-tag.expert {
+  background: rgba(24, 119, 242, 0.1);
+  color: #1877f2;
+  border-color: #1877f2;
+  box-shadow: none;
+}
+
+.personal-resume.modern .skill-tag.ai {
+  background: linear-gradient(135deg, rgba(66, 183, 42, 0.1), rgba(66, 183, 42, 0.2));
+  color: #36a420;
+  border: 1px solid rgba(66, 183, 42, 0.3);
+  box-shadow: none;
+}
+
+.personal-resume.modern .timeline::before {
+  background: linear-gradient(to bottom, #1877f2, #3b5998);
+  box-shadow: none;
+}
+
+.personal-resume.modern .timeline-item::before {
+  background: #ffffff;
+  border: 3px solid #1877f2;
+  box-shadow: none;
+}
+
+.personal-resume.modern .company-info h3 {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+.personal-resume.modern .company-info .position {
+  color: #3b5998;
+  text-shadow: none;
+}
+
+.personal-resume.modern .duration {
+  background: #f0f2f5;
+  color: #666666;
+  border: 1px solid #e4e6eb;
+}
+
+.personal-resume.modern .company-desc {
+  color: #666666;
+}
+
+.personal-resume.modern .responsibilities li {
+  color: #333333;
+}
+
+.personal-resume.modern .responsibilities li::before {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+.personal-resume.modern .achievement {
+  background: rgba(24, 119, 242, 0.05);
+  border-left: 3px solid #1877f2;
+  color: #333333;
+  border: 1px solid rgba(24, 119, 242, 0.1);
+}
+
+.personal-resume.modern .achievement strong {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+.personal-resume.modern .project-card {
+  background: #ffffff;
+  border: 1px solid #e4e6eb;
+}
+
+.personal-resume.modern .project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #1877f2;
+}
+
+.personal-resume.modern .project-name {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+.personal-resume.modern .tech-item {
+  background: #f0f2f5;
+  color: #1877f2;
+  border: 1px solid #e4e6eb;
+}
+
+.personal-resume.modern .tech-item.ai {
+  background: linear-gradient(135deg, rgba(66, 183, 42, 0.1), rgba(66, 183, 42, 0.2));
+  color: #36a420;
+  border: 1px solid rgba(66, 183, 42, 0.3);
+}
+
+.personal-resume.modern .project-desc {
+  color: #333333;
+}
+
+.personal-resume.modern .project-role {
+  color: #666666;
+}
+
+.personal-resume.modern .project-role strong {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+.personal-resume.modern .edu-item {
+  border-bottom: 1px solid #e4e6eb;
+}
+
+.personal-resume.modern .edu-main h4 {
+  color: #1877f2;
+  text-shadow: none;
+}
+
+.personal-resume.modern .edu-main p {
+  color: #666666;
+}
+
+.personal-resume.modern .cert-badge {
+  background: linear-gradient(135deg, rgba(24, 119, 242, 0.1), rgba(24, 119, 242, 0.2));
+  color: #1877f2;
+  border: 1px solid rgba(24, 119, 242, 0.3);
+  box-shadow: none;
+}
+
+.personal-resume.modern .cert-badge svg {
+  text-shadow: none;
+}
+
+/* 漫画风格 */
+.personal-resume.comic {
+  background: #ffffff;
+  border: 3px solid #ff6b6b;
+  box-shadow: 0 4px 20px rgba(255, 107, 107, 0.3);
+}
+
+.personal-resume.comic .resume-header {
+  background: linear-gradient(135deg, #ff6b6b 0%, #4ecdc4 100%);
+  color: #ffffff;
+  border-bottom: 3px solid #ffd166;
+  position: relative;
+}
+
+.personal-resume.comic .resume-header::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 10px;
+  background: #ffd166;
+  border-radius: 5px;
+}
+
+.personal-resume.comic .name-section h1 {
+  color: #ffffff;
+  text-shadow: 3px 3px 0px #ffd166;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2.5rem;
+}
+
+.personal-resume.comic .title-badge {
+  background: #ffd166;
+  color: #292f36;
+  border: 2px solid #292f36;
+  border-radius: 20px;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .contact-item {
+  color: #ffffff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .contact-item svg {
+  color: #ffd166;
+}
+
+.personal-resume.comic .meta-item {
+  color: #ffffff;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .meta-item svg {
+  color: #ffd166;
+}
+
+.personal-resume.comic .resume-content {
+  background: #f9f7f7;
+  padding: 30px;
+}
+
+.personal-resume.comic .section-title {
+  color: #ff6b6b;
+  border-bottom: 3px solid #4ecdc4;
+  text-shadow: 2px 2px 0px rgba(255, 209, 102, 0.5);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1.5rem;
+}
+
+.personal-resume.comic .section-title::after {
+  background: #4ecdc4;
+  box-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+}
+
+.personal-resume.comic .summary {
+  background: #ffffff;
+  border-left: 4px solid #ff6b6b;
+  color: #292f36;
+  border: 2px solid #ffd166;
+  border-radius: 10px;
+  padding: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .highlight {
+  color: #ff6b6b;
+  text-shadow: 1px 1px 0px #ffd166;
+  font-weight: bold;
+}
+
+.personal-resume.comic .skill-category {
+  background: #ffffff;
+  border-top: 3px solid #ff6b6b;
+  border: 2px solid #4ecdc4;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.personal-resume.comic .skill-category h3 {
+  color: #4ecdc4;
+  text-shadow: 1px 1px 0px #ffd166;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .skill-tag {
+  background: #ffd166;
+  color: #292f36;
+  border: 2px solid #292f36;
+  border-radius: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+  padding: 5px 12px;
+  margin: 5px;
+}
+
+.personal-resume.comic .skill-tag:hover {
+  background: #ff6b6b;
+  color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+  transform: scale(1.05);
+}
+
+.personal-resume.comic .skill-tag.expert {
+  background: #4ecdc4;
+  color: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+}
+
+.personal-resume.comic .skill-tag.ai {
+  background: #06d6a0;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 10px rgba(6, 214, 160, 0.5);
+}
+
+.personal-resume.comic .timeline::before {
+  background: linear-gradient(to bottom, #ff6b6b, #4ecdc4);
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+  width: 6px;
+}
+
+.personal-resume.comic .timeline-item::before {
+  background: #ffd166;
+  border: 3px solid #292f36;
+  box-shadow: 0 0 10px rgba(255, 209, 102, 0.5);
+  width: 16px;
+  height: 16px;
+}
+
+.personal-resume.comic .company-info h3 {
+  color: #ff6b6b;
+  text-shadow: 1px 1px 0px #ffd166;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .company-info .position {
+  color: #4ecdc4;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .duration {
+  background: #ffd166;
+  color: #292f36;
+  border: 2px solid #292f36;
+  border-radius: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+}
+
+.personal-resume.comic .company-desc {
+  color: #292f36;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .responsibilities li {
+  color: #292f36;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .responsibilities li::before {
+  color: #ff6b6b;
+  text-shadow: 1px 1px 0px #ffd166;
+  font-size: 16px;
+}
+
+.personal-resume.comic .achievement {
+  background: rgba(255, 107, 107, 0.1);
+  border-left: 4px solid #ff6b6b;
+  color: #292f36;
+  border: 2px solid #ffd166;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .achievement strong {
+  color: #ff6b6b;
+  text-shadow: 1px 1px 0px #ffd166;
+  font-weight: bold;
+}
+
+.personal-resume.comic .project-card {
+  background: #ffffff;
+  border: 2px solid #4ecdc4;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.personal-resume.comic .project-card:hover {
+  box-shadow: 0 8px 25px rgba(78, 205, 196, 0.3);
+  border-color: #ff6b6b;
+  transform: translateY(-5px);
+}
+
+.personal-resume.comic .project-name {
+  color: #ff6b6b;
+  text-shadow: 1px 1px 0px #ffd166;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-size: 1.2rem;
+}
+
+.personal-resume.comic .tech-item {
+  background: #4ecdc4;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  padding: 3px 10px;
+  margin: 3px;
+}
+
+.personal-resume.comic .tech-item.ai {
+  background: #06d6a0;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.personal-resume.comic .project-desc {
+  color: #292f36;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .project-role {
+  color: #4ecdc4;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .project-role strong {
+  color: #ff6b6b;
+  text-shadow: 1px 1px 0px #ffd166;
+  font-weight: bold;
+}
+
+.personal-resume.comic .edu-item {
+  border-bottom: 2px dashed #4ecdc4;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.personal-resume.comic .edu-main h4 {
+  color: #ff6b6b;
+  text-shadow: 1px 1px 0px #ffd166;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .edu-main p {
+  color: #292f36;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.personal-resume.comic .cert-badge {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  color: #ffffff;
+  border: 2px solid #ffd166;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-weight: bold;
+}
+
+.personal-resume.comic .cert-badge svg {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+/* 简笔风格 */
+.personal-resume.sketch {
+  background: #f8f9fa;
+  border: 2px solid #495057;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.personal-resume.sketch .resume-header {
+  background: #ffffff;
+  color: #212529;
+  border-bottom: 2px solid #495057;
+  position: relative;
+}
+
+.personal-resume.sketch .resume-header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, #495057, #495057 5px, transparent 5px, transparent 10px);
+}
+
+.personal-resume.sketch .name-section h1 {
+  color: #212529;
+  text-shadow: none;
+  font-family: 'Courier New', monospace;
+  font-size: 2rem;
+  border-bottom: 2px solid #495057;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.personal-resume.sketch .title-badge {
+  background: #ffffff;
+  color: #495057;
+  border: 2px dashed #495057;
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+}
+
+.personal-resume.sketch .contact-item {
+  color: #495057;
+  font-family: 'Courier New', monospace;
+  border-bottom: 1px dashed #ced4da;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.personal-resume.sketch .contact-item svg {
+  color: #495057;
+}
+
+.personal-resume.sketch .meta-item {
+  color: #495057;
+  font-family: 'Courier New', monospace;
+  border-bottom: 1px dashed #ced4da;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.personal-resume.sketch .meta-item svg {
+  color: #495057;
+}
+
+.personal-resume.sketch .resume-content {
+  background: #ffffff;
+  padding: 30px;
+  position: relative;
+}
+
+.personal-resume.sketch .resume-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(#e9ecef 1px, transparent 1px),
+    linear-gradient(90deg, #e9ecef 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.personal-resume.sketch .section-title {
+  color: #495057;
+  border-bottom: 2px solid #495057;
+  text-shadow: none;
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.personal-resume.sketch .section-title::after {
+  background: #495057;
+  box-shadow: none;
+  height: 2px;
+  bottom: -4px;
+}
+
+.personal-resume.sketch .summary {
+  background: #f8f9fa;
+  border-left: 4px solid #495057;
+  color: #495057;
+  border: 2px dashed #495057;
+  border-radius: 0;
+  padding: 15px;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  z-index: 1;
+}
+
+.personal-resume.sketch .highlight {
+  color: #495057;
+  text-shadow: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.personal-resume.sketch .skill-category {
+  background: #f8f9fa;
+  border-top: 2px solid #495057;
+  border: 2px dashed #495057;
+  border-radius: 0;
+  padding: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.personal-resume.sketch .skill-category h3 {
+  color: #495057;
+  text-shadow: none;
+  font-family: 'Courier New', monospace;
+  border-bottom: 1px solid #495057;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.personal-resume.sketch .skill-tag {
+  background: #ffffff;
+  color: #495057;
+  border: 1px solid #495057;
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  padding: 3px 8px;
+  margin: 3px;
+  transform: rotate(-1deg);
+  transition: all 0.3s ease;
+}
+
+.personal-resume.sketch .skill-tag:hover {
+  background: #495057;
+  color: #ffffff;
+  transform: rotate(1deg) scale(1.05);
+  box-shadow: none;
+}
+
+.personal-resume.sketch .skill-tag.expert {
+  background: #495057;
+  color: #ffffff;
+  transform: rotate(1deg);
+}
+
+.personal-resume.sketch .skill-tag.ai {
+  background: #28a745;
+  color: #ffffff;
+  border: 1px solid #28a745;
+  transform: rotate(2deg);
+}
+
+.personal-resume.sketch .timeline::before {
+  background: #495057;
+  box-shadow: none;
+  width: 2px;
+  background-image: repeating-linear-gradient(180deg, #495057, #495057 10px, transparent 10px, transparent 20px);
+}
+
+.personal-resume.sketch .timeline-item::before {
+  background: #495057;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 2px #495057;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.personal-resume.sketch .company-info h3 {
+  color: #495057;
+  text-shadow: none;
+  font-family: 'Courier New', monospace;
+  border-bottom: 1px solid #495057;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.personal-resume.sketch .company-info .position {
+  color: #6c757d;
+  text-shadow: none;
+  font-family: 'Courier New', monospace;
+  font-style: italic;
+}
+
+.personal-resume.sketch .duration {
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #495057;
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  transform: rotate(-1deg);
+}
+
+.personal-resume.sketch .company-desc {
+  color: #495057;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  z-index: 1;
+}
+
+.personal-resume.sketch .responsibilities li {
+  color: #495057;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  z-index: 1;
+}
+
+.personal-resume.sketch .responsibilities li::before {
+  color: #495057;
+  text-shadow: none;
+  content: '✎';
+  margin-right: 8px;
+}
+
+.personal-resume.sketch .achievement {
+  background: #f8f9fa;
+  border-left: 4px solid #495057;
+  color: #495057;
+  border: 1px solid #495057;
+  border-radius: 0;
+  padding: 12px;
+  font-family: 'Courier New', monospace;
+  position: relative;
+  z-index: 1;
+  transform: rotate(-0.5deg);
+}
+
+.personal-resume.sketch .achievement strong {
+  color: #495057;
+  text-shadow: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.personal-resume.sketch .project-card {
+  background: #f8f9fa;
+  border: 1px solid #495057;
+  border-radius: 0;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  transform: rotate(0.5deg);
+}
+
+.personal-resume.sketch .project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: #495057;
+  transform: rotate(0deg) translateY(-5px);
+}
+
+.personal-resume.sketch .project-name {
+  color: #495057;
+  text-shadow: none;
+  font-family: 'Courier New', monospace;
+  border-bottom: 1px solid #495057;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.personal-resume.sketch .tech-item {
+  background: #ffffff;
+  color: #495057;
+  border: 1px solid #495057;
+  border-radius: 0;
+  font-family: 'Courier New', monospace;
+  padding: 2px 6px;
+  margin: 2px;
+  transform: rotate(-1deg);
+}
+
+.personal-resume.sketch .tech-item.ai {
+  background: #28a745;
+  color: #ffffff;
+  border: 1px solid #28a745;
+  transform: rotate(1deg);
+}
+
+.personal-resume.sketch .project-desc {
+  color: #495057;
+  font-family: 'Courier New', monospace;
+}
+
+.personal-resume.sketch .project-role {
+  color: #6c757d;
+  font-family: 'Courier New', monospace;
+  font-style: italic;
+}
+
+.personal-resume.sketch .project-role strong {
+  color: #495057;
+  text-shadow: none;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.personal-resume.sketch .edu-item {
+  border-bottom: 1px dashed #495057;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.personal-resume.sketch .edu-main h4 {
+  color: #495057;
+  text-shadow: none;
+  font-family: 'Courier New', monospace;
+  border-bottom: 1px solid #495057;
+  padding-bottom: 3px;
+  margin-bottom: 8px;
+}
+
+.personal-resume.sketch .edu-main p {
+  color: #6c757d;
+  font-family: 'Courier New', monospace;
+}
+
+.personal-resume.sketch .cert-badge {
+  background: #f8f9fa;
+  color: #495057;
+  border: 1px solid #495057;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: 'Courier New', monospace;
+  transform: rotate(-1deg);
+}
+
+.personal-resume.sketch .cert-badge svg {
+  text-shadow: none;
+  color: #495057;
+}
